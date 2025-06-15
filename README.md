@@ -1,5 +1,9 @@
 # Movies App - Implementation Status
 
+## 🌐 Live Demo
+
+**Deployed Application**: [https://interview-elotus.vercel.app](https://interview-elotus.vercel.app)
+
 ## ✅ Required Features Completed
 
 ### 1. ✅ User can view a list of movies currently playing in theaters
