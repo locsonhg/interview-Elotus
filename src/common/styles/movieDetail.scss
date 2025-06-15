@@ -1,0 +1,64 @@
+.watch-screen {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #000;
+}
+
+.watch-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+
+  .video-player {
+    width: 60%;
+    background-color: #000;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  .movie-info-side {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .movie-info-overlay {
+      position: relative;
+      padding: 24px;
+      z-index: 1;
+    }
+  }
+}
+
+.episode-list {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  overflow-x: auto;
+  background-color: #111;
+
+  .episode-button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    &.active {
+      background-color: #1db954;
+    }
+  }
+}

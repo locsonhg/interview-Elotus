@@ -1,0 +1,74 @@
+@import "./variables";
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: $bg-color;
+  color: $text-color;
+}
+
+.layout-common {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+
+  .layout-main {
+    flex: 1;
+    padding: 20px;
+    background: $bg-color;
+    color: $text-color;
+    overflow-y: auto;
+
+    // Scrollbar styling
+    scrollbar-width: thin; // Firefox
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      border: 2px solid transparent;
+      background-clip: padding-box;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .layout-footer {
+    background: $bg-color;
+    padding: 10px;
+    text-align: center;
+    color: $text-color;
+  }
+}
+
+//error handling styles
+.network-error-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ff4d4f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.error-message {
+  background: #fff1f0;
+  color: #cf1322;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffa39e;
+  border-radius: 4px;
+}

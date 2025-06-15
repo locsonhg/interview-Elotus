@@ -1,0 +1,35 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  background: #0f1419;
+  color: #fff;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #ff6b6b;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 16px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
